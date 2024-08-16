@@ -1,18 +1,22 @@
 {
-	"name": "codecommit",
-	"version": "1.0.0",
+	"name": "@snomiao/commit",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "1.0.3",
 	"type": "module",
-	"description": "Automate commit message generation with AI for free. Enhance your workflow with smart commit messages generated using AI, adaptable to your needs.",
-	"main": "index.js",
+	"description": "Automate commit message generation with OpenAI. Enhance your workflow with smart commit messages generated using AI, adaptable to your needs.",
+	"main": "cli.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"release": "npm version patch && git push --follow-tags && npm publish"
 	},
 	"bin": {
-		"codecommit": "./index.js"
+		"@snomiao/commit": "./cli.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/maybegal/codecommit.git"
+		"url": "git+https://github.com/snomiao/codecommit.git"
 	},
 	"keywords": [
 		"commit",
@@ -49,7 +53,9 @@
 	},
 	"homepage": "https://github.com/maybegal/codecommit#readme",
 	"dependencies": {
-		"g4f": "^1.4.3",
-		"inquirer": "^9.2.23"
+		"@types/minimist": "^1.2.5",
+		"inquirer": "^9.2.23",
+		"minimist": "^1.2.8",
+		"openai": "^4.55.7"
 	}
 }
