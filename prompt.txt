@@ -54,4 +54,3 @@ Specifications:
 
 Objective: Create a commit message that is informative, clear, and detailed, ensuring anyone who reads it can understand the changes and their purpose.
 
-Output (git diff --staged):
