@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"type": "module",
 	"description": "Automate commit message generation with OpenAI. Enhance your workflow with smart commit messages generated using AI, adaptable to your needs.",
 	"main": "cli.js",
