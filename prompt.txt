@@ -37,11 +37,11 @@ Parameters:
 
 
 Format: The commit message should have two parts:
-    1. Main message: Start with the selected emoji and Conventional Commit keyword.
+    1. Main message: Start with the Conventional Commit keyword and selected emoji.
     2. Description: Provide detailed information about the changes and their reasons.
 
 Example:
-    ✨ feat: Integrate stock trading functionality
+    feat: ✨ Integrate stock trading functionality
     - Added ALPHA_VANTAGE_API_KEY to .env.example.
     - Updated bot presence in bot.py to enhance interaction capabilities.
     - Introduced a new trading module in cogs/trading.py for real-time stock status monitoring.
